@@ -1,0 +1,21 @@
+import os
+from dotenv import load_dotenv
+import litellm
+
+# Load the .env file
+load_dotenv()
+
+# Optional: Turn on debug to see request logs
+litellm._turn_on_debug()
+
+# Get your OpenAI key from environment
+openai_key = os.getenv("OPENAI_API_KEY")
+
+# Make a request using LiteLLM
+response = litellm.completion(
+    model="gpt-3.5-turbo",
+    messages=[{"role": "user", "content": "Tell me a joke"}],
+    api_key=openai_key  # Pass the key here
+)
+
+print(response['choices'][0]['message']['content'])

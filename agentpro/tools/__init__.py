@@ -6,7 +6,10 @@ from .ares_tool import AresInternetTool
 from .yfinance_tool import YFinanceTool
 from .traversaalpro_rag_tool import TraversaalProRAGTool
 from .slide_generation_tool import SlideGenerationTool
-
+from .text_summarizer_tool import TextSummarizerTool
+from .grammer_correction_tool import GrammarCorrectionTool
+from .sentiment_analysis_tool import SentimentAnalysisTool
+from .restaurant_hotel_finder_tool import  RestaurantHotelFinderTool
 __all__ = [
     "Tool",
     "QuickInternetTool",
@@ -15,5 +18,9 @@ __all__ = [
     "AresInternetTool",
     "YFinanceTool",
     "TraversaalProRAGTool",
-    "SlideGenerationTool"
+    "SlideGenerationTool",
+    "TextSummarizerTool",
+    "GrammarCorrectionTool",
+    "SentimentAnalysisTool",
+    "RestaurantHotelFinderTool"
 ]

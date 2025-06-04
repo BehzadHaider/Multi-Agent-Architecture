@@ -12,7 +12,7 @@ from datetime import datetime
 
 
 class ReactAgent:
-    def __init__(self, model: Optional[ModelClient] = None, tools: List[Tool] = None, custom_system_prompt: str = None, max_iterations: int = 20):
+    def __init__(self, model: Optional[ModelClient] = None, tools: List[Tool] = None, custom_system_prompt: str = None, max_iterations: int = 10):
 
         self.client = model or create_model(provider="openai")
 
