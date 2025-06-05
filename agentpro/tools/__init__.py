@@ -10,6 +10,7 @@ from .text_summarizer_tool import TextSummarizerTool
 from .grammer_correction_tool import GrammarCorrectionTool
 from .sentiment_analysis_tool import SentimentAnalysisTool
 from .restaurant_hotel_finder_tool import  RestaurantHotelFinderTool
+from .event_aggregator_tool import EventAggregatorTool
 __all__ = [
     "Tool",
     "QuickInternetTool",
@@ -23,4 +24,5 @@ __all__ = [
     "GrammarCorrectionTool",
     "SentimentAnalysisTool",
     "RestaurantHotelFinderTool"
+    "EventAggregatorTool"
 ]

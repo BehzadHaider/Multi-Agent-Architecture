@@ -23,6 +23,7 @@ from agentpro.tools import (
     SentimentAnalysisTool,
     GrammarCorrectionTool,
     RestaurantHotelFinderTool,
+    EventAggregatorTool,
 )
 
 
@@ -115,6 +116,7 @@ if run_button:
                     GrammarCorrectionTool(),
                     SentimentAnalysisTool(),
                     RestaurantHotelFinderTool(),
+                    EventAggregatorTool(),
                     # If you want to enable RAG, uncomment the next line and set TRAVERSAAL_PRO_API_KEY in your .env
                     # TraversaalProRAGTool(api_key=os.getenv("TRAVERSAAL_PRO_API_KEY", None), document_names="employee_safety_manual"),
                 ]
